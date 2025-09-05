@@ -1,0 +1,21 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+# created-by: conda 25.7.0
+# Note: This is a conda requirements file (MatchSpec format)
+# Contains conda package specifications, not pip requirements
+
+pandas
+pytest
+pycaret
+seaborn
+jupyterlab
+boto3
+python=3.11
+itables
+pydantic-settings
+matplotlib
+streamlit
+plotly
+psycopg2
+openai
