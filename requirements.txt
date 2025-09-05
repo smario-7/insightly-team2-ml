@@ -4,7 +4,6 @@ pycaret
 seaborn
 jupyterlab
 boto3
-python=3.11
 itables
 pydantic-settings
 matplotlib
