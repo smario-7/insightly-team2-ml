@@ -12,3 +12,4 @@ streamlit
 plotly
 psycopg2
 openai
+scikit-learn
