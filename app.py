@@ -87,8 +87,8 @@ if 'ml_results' not in st.session_state:
     st.session_state.ml_results = None
 
 # Ścieżki
-FOLDER = Path(__file__).resolve().parent
-PATH = FOLDER.parent / "hackaton-09-08" / "data" / "avocado.csv"  # hackaton-09-08/data/avocado.csv
+FOLDER = Path(__file__).resolve()
+PATH = FOLDER.parent / "data" / "avocado.csv"  # data/avocado.csv
 
 @st.cache_data(show_spinner=False)
 def _read_csv_data(uploaded_file, use_default_flag: bool) -> pd.DataFrame:
@@ -96,7 +96,7 @@ def _read_csv_data(uploaded_file, use_default_flag: bool) -> pd.DataFrame:
     if uploaded_file is not None:
         return pd.read_csv(uploaded_file)
     if use_default_flag:
-        default_path = FOLDER.parent / "hackaton-09-08" / "data" / "avocado.csv"  # hackaton-09-08/data/avocado.csv
+        default_path = FOLDER.parent / "data" / "avocado.csv"  # data/avocado.csv
         if default_path.exists():
             return pd.read_csv(default_path)
         else:
