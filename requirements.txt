@@ -9,6 +9,6 @@ pydantic-settings
 matplotlib
 streamlit
 plotly
-psycopg2
+psycopg2-binary
 openai
 scikit-learn
